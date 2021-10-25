@@ -1,1 +1,21 @@
-git session aariv
+package com.io;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterDemo {
+
+	public static void main(String[] args) {
+	try {
+		FileWriter fw = new FileWriter("C:\\Users\\yalla\\eclipse-workspace\\java Basics\\src\\com\\io/java.txt");
+	fw.write("this is aariv tech ");
+	fw.flush();
+	fw.close();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+
+	}
+
+}
